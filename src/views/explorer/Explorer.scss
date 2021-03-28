@@ -1,0 +1,37 @@
+.explorer {
+  width: 60vw;
+
+  .search_container {
+    display: flex;
+    flex: 1;
+
+    .search_input {
+      display: inline-flex;
+      width: 100%;
+
+      [data-reach-combobox-input] {
+        flex: 1;
+        font-size: 24px;
+        padding: 10px 60px 10px 10px;
+        border-color: white;
+        border-radius: 6px;
+
+        &:focus {
+          outline: lightgray auto 3px;
+          box-shadow: 0 0 3pt 2pt white;
+        }
+      }
+    }
+
+    .search_button {
+      width: 50px;
+      height: 57px;
+      font-size: 24px;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+      position: absolute;
+      left: calc(80vw - 50px);
+      cursor: pointer;
+    }
+  }
+}

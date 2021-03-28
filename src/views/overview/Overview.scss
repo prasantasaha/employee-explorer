@@ -1,0 +1,35 @@
+.overview {
+  a {
+    color: white;
+
+    &:hover {
+      color: grey;
+    }
+
+    .svg-inline--fa {
+      margin-right: 20px;
+    }
+  }
+
+  .back_button {
+      position: absolute;
+      right: 20px;
+      top: 10px;
+  }
+
+  .subordinates-list {
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 24px;
+
+    &__item {
+      text-align: left;
+
+      a {
+        .svg-inline--fa {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
