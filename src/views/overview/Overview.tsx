@@ -86,7 +86,7 @@ const Overview = () => {
       ) : (
         <div>
           <div className="back_button">
-            <a href="/explorer">
+            <a href={`${process.env.PUBLIC_URL}/explorer`}>
               {' '}
               <FontAwesomeIcon icon={faArrowLeft} />
               Back to explorer
@@ -103,7 +103,9 @@ const Overview = () => {
                         key={subordinateName.toLowerCase()}
                         className="subordinates-list__item"
                       >
-                        <a href={`/overview/${subordinateName}`}>
+                        <a
+                          href={`${process.env.PUBLIC_URL}/overview/${subordinateName}`}
+                        >
                           <FontAwesomeIcon icon={faUserAlt} />
                           {subordinateName}
                         </a>

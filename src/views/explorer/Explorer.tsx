@@ -9,7 +9,7 @@ const Explorer = () => {
   const history = useHistory();
 
   const showOverview = (employeeName: string) => {
-    history.push(`/overview/${employeeName}`);
+    history.push(`${process.env.PUBLIC_URL}/overview/${employeeName}`);
   };
 
   const handleKeyUp = (event: React.KeyboardEvent<HTMLInputElement>) => {

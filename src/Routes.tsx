@@ -7,11 +7,18 @@ export const Routes = () => {
   return (
     <div>
       <Switch>
-        <Route exact path="/explorer" component={Explorer} />
-        <Route exact path="/">
-          <Redirect to="/explorer" />
+        <Route
+          exact
+          path={`${process.env.PUBLIC_URL}/explorer`}
+          component={Explorer}
+        />
+        <Route exact path={`${process.env.PUBLIC_URL}/`}>
+          <Redirect to={`${process.env.PUBLIC_URL}/explorer`} />
         </Route>
-        <Route path="/overview/:name" component={Overview} />
+        <Route
+          path={`${process.env.PUBLIC_URL}/overview/:name`}
+          component={Overview}
+        />
         <Route component={NoMatch} />
       </Switch>
     </div>
