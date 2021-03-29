@@ -14,7 +14,7 @@ const Overview = () => {
 
   const fetchEmployeeDetails = async (employeeName: string) => {
     const response = await axios.get(
-      `http://api.additivasia.io/api/v1/assignment/employees/${employeeName}`,
+      `https://api.additivasia.io/api/v1/assignment/employees/${employeeName}`,
     );
 
     return {
